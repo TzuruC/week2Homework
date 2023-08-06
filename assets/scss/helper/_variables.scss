@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+@mixin h1FontStyle{
+    font-size: 128px;
+    line-height: 1.5;
+    @content;
+}
+@mixin h2FontStyle{
+    font-size: 64px;
+    line-height: 1.5;
+    @content;
+}
+@mixin pFontStyle{
+    font-size: 24px;
+    line-height: 1.5;
+    @content;
+}
+@mixin h4FontStyle{
+    font-size: 20px;
+    line-height: 1.5;
+    @content;
+}
+@mixin smPFontStyle{
+    font-size: 16px;
+    line-height: 1.5;
+    @content;
+}
+@mixin aBtnStyle{
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    @content;
+}
+@mixin hoverStyle{
+    &:hover{
+        opacity: .7;
+    }
+}
+
+
+$color-bg-main: #000000;
+$color-bg-sec: #FFFFFF;
+
+$color-font-main: #FFFFFF;
+$color-font-sec: #000000;
+$color-font-acc: #00FFA3;
+
+$bg-img-intro: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/background-img.png');
+
+$bg-img-contact: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+
